@@ -74,7 +74,7 @@ function Header(props) {
               />
             </Hidden>
 
-            <SimpleMenu className={classes.menu} />
+            {/* <SimpleMenu className={classes.menu} /> */}
 
             <Hidden mdDown>
               <div className={classes.menu}>
