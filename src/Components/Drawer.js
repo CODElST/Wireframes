@@ -69,7 +69,7 @@ export default function SwipeableTemporaryDrawer(props) {
         </NavLink>
         <NavLink style={{ textDecoration: "none" }} to="/about" exact>
           <ListItem className={classes.ListItem} button>
-            <ListItemText primary={"Forum"} />
+            <ListItemText primary={"About Us"} />
           </ListItem>
         </NavLink>
         <NavLink style={{ textDecoration: "none" }} to="/anime-about" exact>
@@ -82,11 +82,6 @@ export default function SwipeableTemporaryDrawer(props) {
             <ListItemText primary={"About Us"} />
           </ListItem>
         </NavLink> */}
-        <NavLink style={{ textDecoration: "none" }} to="/profile" exact>
-          <ListItem className={classes.ListItem} button>
-            <ListItemText primary={"Profile"} />
-          </ListItem>
-        </NavLink>
       </List>
     </div>
   );
