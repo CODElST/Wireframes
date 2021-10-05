@@ -114,7 +114,7 @@ function Header(props) {
                   <Button className={classes.Button}>Recommendation</Button>
                 </NavLink> */}
 
-                <NavLink
+                {/* <NavLink
                   style={{ textDecoration: "none" }}
                   activeStyle={{
                     borderBottom: "1px solid red",
@@ -124,7 +124,7 @@ function Header(props) {
                   exact
                 >
                   <Button className={classes.Button}>About Us</Button>
-                </NavLink>
+                </NavLink> */}
 
                 {/* <NavLink
                   style={{ textDecoration: "none" }}
