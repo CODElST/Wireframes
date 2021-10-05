@@ -140,12 +140,16 @@ function Header(props) {
             </Hidden>
             <Hidden smDown>
               <div className={classes.heading}>
-                <Typography variant="h4">ANILITE</Typography>
+                <Typography style={{ color: "#8B5CF6" }} variant="h4">
+                  ANILITE
+                </Typography>
               </div>
             </Hidden>
             <Hidden mdUp>
               <div className={classes.heading}>
-                <Typography variant="h4">AL</Typography>
+                <Typography style={{ color: "#8B5CF6" }} variant="h4">
+                  AL
+                </Typography>
               </div>
             </Hidden>
             <div className={classes.endbar}>
