@@ -17,9 +17,9 @@ export default function App() {
           <Content />
         </Route>
 
-        <Route path="/about">
+        {/* <Route path="/about">
           <Content />
-        </Route>
+        </Route> */}
 
         <Route path="/anime-about">
           <Content />
