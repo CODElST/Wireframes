@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,14 +32,17 @@ const data = [
   {
     src: "https://media.kitsu.io/anime/cover_images/30/original.jpg?1597702679=",
     Anime: "Anime 1",
+    link: "aa-megami-sama-tv",
   },
   {
     src: "https://media.kitsu.io/anime/cover_images/31/original.jpg?1597701484=",
     Anime: "Anime 2",
+    link: "aa-megami-sama-tv",
   },
   {
     src: "https://media.kitsu.io/anime/cover_images/48/original.jpg?1597703215=",
     Anime: "Anime 3",
+    link: "aa-megami-sama-tv",
   },
 ];
 
@@ -57,10 +61,12 @@ export default function CarouselMain() {
     >
       {data.map((item, id) => {
         return (
-          <div key={id} className={classes.root}>
-            <img className={classes.image} alt="" src={item.src} />
-            <p className="legend">{item.Anime}</p>
-          </div>
+          <Link to={`/anime-about/${item.link}`}>
+            <div key={id} className={classes.root}>
+              <img className={classes.image} alt="" src={item.src} />
+              <p className="legend">{item.Anime}</p>
+            </div>
+          </Link>
         );
       })}
     </Carousel>
